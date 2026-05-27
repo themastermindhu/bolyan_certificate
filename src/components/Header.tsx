@@ -43,7 +43,7 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img
-              src="/bolyan_logo.webp"
+              src="/bolyan_logo.png"
               alt="Bolyán Certificate Logo"
               className="w-10 h-10 object-contain"
             />
