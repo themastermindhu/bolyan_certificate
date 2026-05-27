@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Menu, X } from 'lucide-react';
+import { Shield, Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Header() {
@@ -39,15 +39,10 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <img
-              src="/bolyan_logo.png"
-              alt="Bolyán Certificate Logo"
-              className="w-10 h-10 object-contain"
-            />
-
+          <Link to="/" className="flex items-center space-x-2">
+           <div className="w-10 h-10 bg-bolyan-accent rounded-lg flex items-center justify-center"> 
+             <Shield className="w-6 h-6 text-white" />
+           </div>
             <span className="font-serif text-xl sm:text-2xl font-bold text-white">
               Bolyán Certificate
             </span>
